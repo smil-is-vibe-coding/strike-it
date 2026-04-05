@@ -44,7 +44,7 @@
 
 Strike It is deployed directly on **GitHub Pages**! 
 
-🔗 **[Visit Strike It Live Here](https://smil-is-vibe-coding.github.io/Strike-it/)**
+🔗 **[Visit Strike It Live Here](https://smil-is-vibe-coding.github.io/strike-it/)**
 
 ### How to Install (100% Offline Support 📶)
 Strike It is a fully functioning Progressive Web App (PWA). Once you visit the site, you can install it directly to your phone. **And yes, we are absolutely sure it works entirely offline!** Your data will safely stay on your device permanently.
