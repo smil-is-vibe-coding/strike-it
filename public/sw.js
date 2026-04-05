@@ -1,10 +1,10 @@
 const CACHE_NAME = 'strike-it-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/mascot.png',
-  '/icon-512.png',
-  '/manifest.json',
+  './',
+  './index.html',
+  './mascot.png',
+  './icon-512.png',
+  './manifest.json',
 ];
 
 self.addEventListener('install', (event) => {
@@ -33,6 +33,6 @@ self.addEventListener('fetch', (event) => {
         }
         return response;
       });
-    }).catch(() => caches.match('/'))
+    }).catch(() => caches.match('./'))
   );
 });

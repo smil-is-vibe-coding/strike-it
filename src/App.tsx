@@ -50,7 +50,7 @@ function App() {
       <header className="header">
         <div className="mascot-container">
           <motion.div variants={mascotVariants} animate={cheering ? 'cheer' : isSleeping ? 'sleep' : 'normal'} className="mascot-wrap">
-            <img src="/mascot.png" alt="Strike It Mascot" className="mascot-img" />
+            <img src={`${import.meta.env.BASE_URL}mascot.png`} alt="Strike It Mascot" className="mascot-img" />
           </motion.div>
           <AnimatePresence>
             {isSleeping && (

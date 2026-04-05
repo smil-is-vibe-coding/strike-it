@@ -2,14 +2,14 @@
   "name": "Strike It",
   "short_name": "StrikeIt",
   "description": "Cozy task tracking with streaks",
-  "start_url": "/",
+  "start_url": "/strike-it/",
   "display": "standalone",
   "background_color": "#fff9f0",
   "theme_color": "#e6a87c",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icon-512.png",
+      "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
