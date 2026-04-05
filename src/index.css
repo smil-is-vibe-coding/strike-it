@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #fff9f0;
+  --text: #4a3728;
+  --text-muted: #8b735b;
+  --primary: #e6a87c;
+  --primary-light: #f3d2b9;
+  --secondary: #d4e6cc;
+  --secondary-dark: #a8c69f;
+  --accent: #f472b6;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 30px rgba(74, 55, 40, 0.08);
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --font-main: 'Quicksand', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; min-height: 100dvh; }
+#root { width: 100%; max-width: 500px; margin: 0 auto; min-height: 100dvh; background: var(--bg); position: relative; }
+h1,h2,h3,h4 { margin: 0; font-weight: 700; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; padding: 0; }
+input { font-family: inherit; font-size: 16px; border: none; outline: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 10px; }

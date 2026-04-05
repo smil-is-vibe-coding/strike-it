@@ -1,0 +1,48 @@
+.dclock-wrap { width: 100%; }
+.dclock-label-row {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--card-bg); padding: 12px 16px; border-radius: var(--radius-md);
+  border: 2px solid var(--primary-light);
+}
+.dclock-label { font-weight: 600; font-size: 14px; color: var(--text-muted); }
+.dclock-display { font-weight: 700; color: var(--primary); font-size: 18px; font-family: 'Quicksand', monospace; }
+
+.dclock-modal {
+  margin-top: 8px; display: flex; flex-direction: column; gap: 10px;
+}
+
+/* Casio screen */
+.casio-screen {
+  background: #2a3a2a; border-radius: 14px; padding: 4px;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.15);
+}
+.casio-inner {
+  background: #b8c9a3; border-radius: 10px; padding: 16px 12px 10px;
+  display: flex; flex-direction: column; align-items: center;
+  font-family: 'Courier New', monospace;
+}
+.casio-time { display: flex; align-items: baseline; gap: 0; }
+.casio-digit {
+  font-size: 36px; font-weight: 700; color: #2a3a2a; letter-spacing: 2px;
+  cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background 0.2s;
+}
+.casio-digit:hover { background: rgba(42,58,42,0.1); }
+.casio-digit.blink { animation: casio-blink 1s step-end infinite; }
+@keyframes casio-blink {
+  50% { opacity: 0.3; }
+}
+.casio-colon { font-size: 32px; font-weight: 700; color: #2a3a2a; margin: 0 2px; }
+.casio-ampm { font-size: 14px; font-weight: 700; color: #2a3a2a; margin-left: 6px; opacity: 0.7; }
+.casio-sub { font-size: 10px; color: #2a3a2a; opacity: 0.5; margin-top: 4px; letter-spacing: 2px; text-transform: uppercase; }
+
+/* Buttons */
+.dclock-controls { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px; }
+.dclock-btn {
+  padding: 10px 0; border-radius: 10px; font-weight: 700; font-size: 14px;
+  transition: all 0.1s;
+}
+.dclock-btn:active { transform: scale(0.93); }
+.dclock-btn.up { background: var(--secondary); color: var(--text); }
+.dclock-btn.down { background: var(--secondary); color: var(--text); }
+.dclock-btn.ampm { background: var(--primary-light); color: var(--text); }
+.dclock-btn.next { background: var(--primary); color: white; }

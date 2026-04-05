@@ -1,0 +1,234 @@
+.analytics {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stats-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.graph-card {
+  background: var(--card-bg);
+  padding: 20px 14px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.graph-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.proj-card {
+  background: var(--card-bg);
+  padding: 14px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.blue {
+  background: #e0f2fe;
+  color: #0ea5e9;
+}
+
+.icon-circle.gold {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.proj-card h4 {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.proj-val { font-size: 16px; font-weight: 700; color: var(--text); margin: 2px 0; }
+.proj-sub { font-size: 10px; color: var(--text-muted); }
+
+/* Trophy Room */
+.trophy-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 10px;
+}
+.trophy-item {
+  background: var(--card-bg); padding: 12px 6px; border-radius: var(--radius-md); box-shadow: var(--shadow);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  transition: all 0.3s;
+}
+.trophy-item.locked { opacity: 0.4; filter: grayscale(1); box-shadow: none; border: 1px dashed var(--primary-light); background: transparent; }
+.trophy-icon { font-size: 28px; line-height: 1; margin-bottom: 6px; }
+.trophy-name { font-size: 10px; font-weight: 700; color: var(--text); line-height: 1.1; }
+.trophy-req { font-size: 9px; color: var(--text-muted); margin-top: 4px; }
+
+/* Per-task breakdown */
+.per-task-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.per-task-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.per-task-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pt-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pt-cat {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.pt-name {
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.pt-streak {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--secondary);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pt-stats-row {
+  display: flex;
+  gap: 16px;
+}
+
+.pt-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+}
+
+.pt-val {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.pt-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: block;
+}
+
+.pt-projections {
+  display: flex;
+  gap: 8px;
+  background: var(--bg);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.pt-proj {
+  flex: 1;
+  text-align: center;
+}
+
+.pt-proj-val {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  display: block;
+}
+
+.pt-proj-label {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+/* Motivation */
+.motiv-card {
+  background: linear-gradient(135deg, white, var(--bg));
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid white;
+}
+
+.heart-circle {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(244, 114, 182, 0.2);
+  flex-shrink: 0;
+}
+
+.motiv-card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.motiv-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}

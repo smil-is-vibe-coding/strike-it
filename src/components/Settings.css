@@ -1,0 +1,31 @@
+.settings-page { display: flex; flex-direction: column; gap: 16px; }
+.settings-card {
+  background: var(--card-bg); padding: 18px; border-radius: var(--radius-md);
+  box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px;
+}
+.settings-card.danger { border: 2px solid #fee2e2; }
+.setting-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.setting-row h4 { font-size: 15px; }
+.setting-desc { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.toggle-group { display: flex; background: var(--bg); border-radius: var(--radius-sm); padding: 3px; gap: 2px; }
+.toggle-btn {
+  padding: 6px 14px; border-radius: 9px; font-weight: 700; font-size: 13px;
+  color: var(--text-muted); transition: all 0.2s;
+}
+.toggle-btn.active { background: var(--primary); color: white; box-shadow: 0 2px 6px rgba(230,168,124,0.3); }
+.clear-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: #fee2e2; color: #dc2626; padding: 10px; border-radius: var(--radius-sm);
+  font-weight: 700; font-size: 14px; width: 100%;
+}
+.confirm-row { display: flex; flex-direction: column; gap: 10px; }
+.confirm-warn { display: flex; align-items: center; gap: 6px; color: #dc2626; font-size: 13px; font-weight: 600; }
+.confirm-btns { display: flex; gap: 8px; }
+.cancel-btn {
+  flex: 1; padding: 10px; border-radius: var(--radius-sm); font-weight: 700;
+  background: var(--bg); color: var(--text-muted); font-size: 14px;
+}
+.danger-btn {
+  flex: 1; padding: 10px; border-radius: var(--radius-sm); font-weight: 700;
+  background: #dc2626; color: white; font-size: 14px;
+}

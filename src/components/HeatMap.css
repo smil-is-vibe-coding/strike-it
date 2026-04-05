@@ -1,0 +1,68 @@
+.heatmap-wrap {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.heatmap-grid {
+  display: flex;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.heatmap-labels {
+  display: none;
+  /* hidden on small screens, grid is self-explanatory */
+}
+
+.heatmap-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.heatmap-cell {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  transition: transform 0.15s;
+  flex-shrink: 0;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.4);
+}
+
+.heatmap-cell.level-0 {
+  background: #f3ebe0;
+}
+
+.heatmap-cell.level-1 {
+  background: #f3d2b9;
+}
+
+.heatmap-cell.level-2 {
+  background: #e6a87c;
+}
+
+.heatmap-cell.level-3 {
+  background: #c47a4a;
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  justify-content: flex-end;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.heatmap-legend .heatmap-cell {
+  width: 12px;
+  height: 12px;
+}

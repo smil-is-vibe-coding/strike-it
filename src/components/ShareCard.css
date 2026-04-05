@@ -1,0 +1,50 @@
+.share-trigger {
+  width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, #e6a87c, #f472b6); color: white;
+  padding: 14px; border-radius: var(--radius-md); font-weight: 700; font-size: 15px;
+  box-shadow: 0 8px 20px rgba(230,168,124,0.3);
+}
+.share-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100;
+  display: flex; align-items: flex-end; justify-content: center;
+  backdrop-filter: blur(4px);
+}
+.share-sheet {
+  background: var(--bg); border-radius: 28px 28px 0 0; padding: 24px;
+  width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 16px;
+  max-height: 90vh; overflow-y: auto;
+}
+.share-head { display: flex; justify-content: space-between; align-items: center; }
+.share-head h3 { font-size: 20px; }
+.share-head button { color: var(--text-muted); }
+.card-types { display: flex; gap: 8px; }
+.type-btn {
+  flex: 1; padding: 8px; border-radius: var(--radius-sm); font-weight: 700; font-size: 13px;
+  background: var(--card-bg); color: var(--text-muted); transition: all 0.2s;
+}
+.type-btn.active { background: var(--primary); color: white; }
+
+.share-card {
+  border-radius: 24px; padding: 32px 24px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.card-streak { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+.card-hours { background: linear-gradient(135deg, #d4e6cc, #a8c69f); }
+.card-consistency { background: linear-gradient(135deg, #fce7f3, #f9a8d4); }
+
+.card-brand {
+  font-size: 14px; font-weight: 700; opacity: 0.5; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 16px;
+}
+.card-body { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.card-icon { opacity: 0.6; margin-bottom: 8px; }
+.card-big { font-size: 56px; font-weight: 700; line-height: 1; }
+.card-label { font-size: 16px; font-weight: 600; opacity: 0.7; }
+.card-task { font-size: 14px; font-weight: 500; opacity: 0.5; margin-top: 4px; }
+.card-footer { font-size: 11px; opacity: 0.3; margin-top: 20px; font-weight: 700; letter-spacing: 1px; }
+
+.share-action {
+  width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--primary); color: white; padding: 14px; border-radius: var(--radius-md);
+  font-weight: 700; font-size: 16px;
+}

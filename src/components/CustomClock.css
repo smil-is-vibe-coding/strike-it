@@ -1,0 +1,51 @@
+.clock-wrap { width: 100%; }
+.clock-label-row {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--card-bg); padding: 12px 16px; border-radius: var(--radius-md);
+  border: 2px solid var(--primary-light);
+}
+.clock-label { font-weight: 600; font-size: 14px; color: var(--text-muted); }
+.time-display { font-weight: 700; color: var(--primary); font-size: 18px; }
+.clock-modal {
+  background: var(--card-bg); border-radius: var(--radius-lg); padding: 24px;
+  box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: center;
+  gap: 16px; margin-top: 8px;
+}
+.clock-face {
+  width: 190px; height: 190px; border: 6px solid var(--primary-light);
+  border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center;
+}
+.hour-num {
+  position: absolute; font-weight: 700; font-size: 14px; color: var(--text-muted);
+  width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; cursor: pointer; transition: all 0.2s;
+}
+.hour-num.active { background: var(--primary); color: white; }
+.hour-num:hover { background: var(--primary-light); }
+.clock-center { width: 10px; height: 10px; background: var(--primary); border-radius: 50%; z-index: 2; }
+.clock-hand { position: absolute; width: 4px; height: 190px; display: flex; justify-content: center; z-index: 1; }
+.hand-dot {
+  width: 20px; height: 20px; background: var(--primary); border-radius: 50%;
+  margin-top: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 3px solid white; cursor: grab;
+}
+.minute-picker { width: 100%; display: flex; align-items: center; gap: 12px; }
+.minute-slider {
+  flex: 1; height: 6px; background: var(--primary-light); border-radius: 4px;
+  -webkit-appearance: none; appearance: none;
+}
+.minute-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 18px; height: 18px; background: var(--accent);
+  border-radius: 50%; cursor: pointer;
+}
+.minute-text { font-weight: 600; color: var(--text-muted); min-width: 55px; font-size: 14px; }
+.ampm-row { display: flex; gap: 8px; }
+.ampm-btn {
+  padding: 6px 18px; border-radius: var(--radius-sm); font-weight: 700; font-size: 14px;
+  color: var(--text-muted); background: var(--bg); transition: all 0.2s;
+}
+.ampm-btn.active { background: var(--secondary); color: var(--text); }
+.done-btn {
+  width: 100%; background: var(--primary); color: white; padding: 10px;
+  border-radius: var(--radius-md); font-weight: 700; font-size: 15px;
+}
+.done-btn:active { transform: scale(0.97); }
